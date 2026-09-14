@@ -55,7 +55,7 @@ Run the scripts from the project root in the following order.
 ### 1. Generate the yearly Top 100 company lists
 
 ```bash
-uv run python get_top100.py
+uv run python src\research_task_traders\get_top100.py
 ```
 
 This script obtains the largest U.S. companies by market capitalization for each selection year and saves the resulting Top 100 lists for later analysis.
@@ -63,7 +63,7 @@ This script obtains the largest U.S. companies by market capitalization for each
 ### 2. Calculate the S&P 500 benchmark returns
 
 ```bash
-uv run python sp500_return.py
+uv run python src\research_task_traders\sp500_return.py
 ```
 
 This script calculates the corresponding five-year SPY/S&P 500 returns used as the benchmark.
@@ -71,7 +71,7 @@ This script calculates the corresponding five-year SPY/S&P 500 returns used as t
 ### 3. Calculate five-year returns for the Top 100 stocks
 
 ```bash
-uv run python calculate_top100_5y_returns.py
+uv run python src\research_task_traders\calculate_top100_5y_returns.py
 ```
 
 This script calculates the five-year total return of the selected Top 100 stocks, including price changes and dividends and handling the relevant historical ticker/corporate-action information.
@@ -79,7 +79,7 @@ This script calculates the five-year total return of the selected Top 100 stocks
 ### 4. Run the benchmark comparison
 
 ```bash
-uv run python benchmark_returns.py
+uv run python src\research_task_traders\benchmark_returns.py
 ```
 
 This script compares the Top 100 stock returns with the corresponding SPY returns and produces the main benchmark statistics used in the report.
@@ -91,13 +91,13 @@ Two additional exploratory analyses test whether using a more concentrated group
 Run the Top 50 experiment with:
 
 ```bash
-uv run python experiment_2_top50.py
+uv run python src\research_task_traders\experiment_2_top50.py
 ```
 
 Run the Top 20 experiment with:
 
 ```bash
-uv run python experiment_3_top20.py
+uv run python src\research_task_traders\experiment_3_top20.py
 ```
 
 These experiments use the same underlying return data but restrict the analysis to the largest 50 and 20 companies respectively.
