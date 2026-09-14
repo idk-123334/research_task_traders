@@ -1,0 +1,3 @@
+Date and time,Observation or problem,Action or experiment,Result,Decision
+Day 2,Massive API lacks information on some companies,Investigated the significance of the missing information,Most of the missing information is insignificant and can be ignored,Do not apply a filter to entries with missing information
+Day 3,The result does not support the hypothesis,Tested alternative thresholds,The revised hypothesis is supported at a lower threshold,Include all experiments and threshold changes in the report
